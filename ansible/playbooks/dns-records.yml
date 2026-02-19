@@ -19,11 +19,11 @@
           address: "{{ item.ip }}"
         state: present
       loop:
-        - { name: "inventory-api", ip: "10.100.10.11" }
-        - { name: "inventory-web", ip: "10.100.10.12" }
-        - { name: "inventory-worker", ip: "10.100.10.13" }
-        - { name: "inventory-db-primary", ip: "10.100.20.11" }
-        - { name: "inventory-db-replica", ip: "10.100.20.12" }
+        - { name: "inventory-api", ip: "172.20.10.11" }
+        - { name: "inventory-web", ip: "172.20.10.12" }
+        - { name: "inventory-worker", ip: "172.20.10.13" }
+        - { name: "inventory-db-primary", ip: "172.20.20.11" }
+        - { name: "inventory-db-replica", ip: "172.20.20.12" }
 
     - name: Create CNAME for load balancer
       infoblox.universal_ddi.dns_record:

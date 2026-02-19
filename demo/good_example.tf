@@ -5,9 +5,9 @@
 
 resource "bloxone_dns_a_record" "app_records" {
   for_each = {
-    webserver = "10.100.10.50"
-    dbserver  = "10.100.20.50"
-    appserver = "10.100.10.51"
+    webserver = "172.20.10.50"
+    dbserver  = "172.20.20.50"
+    appserver = "172.20.10.51"
   }
 
   name_in_zone = each.key

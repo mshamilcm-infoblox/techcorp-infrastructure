@@ -6,7 +6,7 @@
 
 environment = "dev"
 aws_region  = "us-east-1"
-vpc_cidr    = "10.100.0.0/16"
+vpc_cidr    = "172.20.0.0/16"
 
 # Infoblox credentials are set via environment variables:
 # export BLOXONE_API_KEY="your-api-key-here"
