@@ -15,3 +15,9 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.100.0.0/16"
 }
+
+variable "ddi_api_key" {
+  description = "BloxOne DDI API key (set via TF_VAR_ddi_api_key environment variable)"
+  type        = string
+  sensitive   = true
+}

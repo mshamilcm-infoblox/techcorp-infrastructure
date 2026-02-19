@@ -26,6 +26,6 @@ provider "aws" {
 }
 
 provider "bloxone" {
-  # API key from environment variable: BLOXONE_API_KEY
-  # CSP URL from environment variable: BLOXONE_CSP_URL
+  csp_url = "https://csp.infoblox.com"
+  api_key = var.ddi_api_key
 }
