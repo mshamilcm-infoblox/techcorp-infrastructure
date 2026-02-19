@@ -1,11 +1,6 @@
 name: TechCorp Full-Stack Application Deployment
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'terraform/**'
-      - 'ansible/**'
   workflow_dispatch:
     inputs:
       environment:
