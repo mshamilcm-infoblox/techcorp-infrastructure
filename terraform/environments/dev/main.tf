@@ -98,7 +98,7 @@ module "infoblox_dns" {
       type    = "A"
       address = "172.20.10.99"
       comment = "Grafana dashboard"
-    }                                                                                                                 
+    }
   }
 
   depends_on = [module.infoblox_ipam]
